@@ -8,7 +8,11 @@
           <div class="card-body">
             <p class="lead"><strong>ToDo Items:</strong></p>
             <hr />
-            <app-todos *ngFor="let todo of todos" [todo]="todo"></app-todos>
+            <app-todos
+              *ngFor="let todo of todos"
+              [todo]="todo"
+              (deleteRequest)="deleteTodo($event)"
+            ></app-todos>
           </div>
         </div>
       </div>
