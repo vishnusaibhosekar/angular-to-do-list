@@ -1,3 +1,16 @@
+<style>
+  .input-center {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .input-center::placeholder {
+    text-align: center;
+  }
+</style>
+
 <div class="container" style="padding-top: 5%">
   <div class="card jumbotron text-center">
     <div class="card-body">
@@ -6,7 +19,7 @@
         <input
           type="text"
           [(ngModel)]="newTodoText"
-          class="form-control"
+          class="form-control input-center"
           placeholder="Enter a todo"
         />
       </p>

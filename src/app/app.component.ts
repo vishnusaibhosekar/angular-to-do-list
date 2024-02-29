@@ -20,7 +20,7 @@ import { TodosComponent } from './todos/todos.component';
 })
 export class AppComponent {
   title = 'to-do-list';
-  todos = [{ id: 1, text: 'Learn Angular', completed: false }];
+  todos = [];
 
   onTodoAdded(newTodoText: string) {
     this.todos.push({
